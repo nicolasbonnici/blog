@@ -1,6 +1,6 @@
 <?php
 
-namespace modules\blog\Controllers;
+namespace bundles\blog\Controllers;
 
 /**
  * Blog HomeController
@@ -33,7 +33,7 @@ class HomeController extends \Library\Core\Auth {
     public function readPostAction()
     {
         if (isset($this->_params['idpost']) && intval($this->_params['idpost']) > 0) {
-            $oBlogModel = new \modules\backend\Models\Blog(intval($this->_params['idpost']), $this->oUser);
+            $oBlogModel = new \bundles\backend\Models\Blog(intval($this->_params['idpost']), $this->oUser);
             $oPost = $oBlogModel->read();
             if (! is_null($oPost) && $oPost->isLoaded()) {
                 $this->_view['oPost'] = $oPost;
@@ -46,7 +46,7 @@ class HomeController extends \Library\Core\Auth {
     public function updatePostAction()
     {
         if (isset($this->_params['idpost']) && intval($this->_params['idpost']) > 0) {
-            $oBlogModel = new \modules\backend\Models\Blog(intval($this->_params['idpost']), $this->oUser);
+            $oBlogModel = new \bundles\backend\Models\Blog(intval($this->_params['idpost']), $this->oUser);
             $oPost = $oBlogModel->read();
             if (! is_null($oPost) && $oPost->isLoaded()) {
                 $this->_view['oPost'] = $oPost;
