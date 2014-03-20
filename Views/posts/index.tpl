@@ -18,7 +18,7 @@
                 </th>
             </tr>
         </thead>
-        <tbody id="postList" class="ui-loadable" data-entity="Post" data-view="blog/listPost.tpl" data-parameters="" data-module="backend" data-controller="crud" data-action="listByUser">
+        <tbody id="postList" class="ui-loadable" data-entity="Post" data-view="posts/list.tpl" data-parameters="" data-bundle="crud" data-controller="list" data-action="listByUser">
     
         </tbody>
     </table>

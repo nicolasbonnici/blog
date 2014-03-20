@@ -1,6 +1,6 @@
 <?php
 
-namespace bundles\backend\Models;
+namespace bundles\blog\Models;
 
 class Blog  extends \Library\Core\Crud {
 

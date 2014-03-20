@@ -83,12 +83,12 @@ span.reminder-txt {}
     		</h1><br />
             <ul class="nav nav-pills transparentBlackBg rounded">
               <li class="active">
-                <a href="#" class="ui-sendxhr" data-url="/backend/blog/dashboard/" data-selector="#dashboard" role="button">
+                <a href="#" class="ui-sendxhr" data-url="/blog/dashboard/" data-selector="#dashboard" role="button">
                     <span class="glyphicon glyphicon-home"></span> <strong>Dashboard</strong>
                 </a>
               </li>
               <li>
-                <a href="#" class="ui-sendxhr refreshOnCallback" data-url="/backend/blog/posts/" data-selector="#dashboard" role="button" title="Gérer les posts">
+                <a href="#" class="ui-sendxhr refreshOnCallback" data-url="/blog/posts/" data-selector="#dashboard" role="button" title="Gérer les posts">
                     <span class="glyphicon glyphicon-globe"></span> <strong>Posts</strong>
                 </a>
               </li>
@@ -100,12 +100,12 @@ span.reminder-txt {}
                 </a>
                 <ul class="dropdown-menu">
                     <li>
-                        <a href="#" type="button" class="ui-sendxhr" data-url="/backend/blog/createblog/" data-selector="#modal-post-content" role="button" data-toggle="modal">
+                        <a href="#" type="button" class="ui-sendxhr" data-url="/blog/posts/create/" data-selector="#modal-post-content" role="button" data-toggle="modal">
                             <span class="glyphicon glyphicon-file"></span> Bla bla
                         </a>
                     </li>
                     <li>
-                        <a href="#" type="button" class="ui-sendxhr" data-url="/backend/blog/posts/" data-selector="#dashboard" role="button">
+                        <a href="#" type="button" class="ui-sendxhr" data-url="/blog/posts/" data-selector="#dashboard" role="button">
                             <span class="glyphicon glyphicon-file"></span> Gérer
                         </a>
                     </li>

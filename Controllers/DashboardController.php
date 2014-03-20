@@ -3,13 +3,14 @@
 namespace bundles\blog\Controllers;
 
 /**
- * Blog HomeController
+ * Blog DashController
  * A simple but powerfull blogging app
+ *
  *
  * @author Nicolas Bonnici
  */
 
-class HomeController extends \Library\Core\Auth {
+class DashboardController extends \Library\Core\Auth {
 
     public function __preDispatch() {}
 
@@ -17,8 +18,9 @@ class HomeController extends \Library\Core\Auth {
 
     public function indexAction()
     {
-        $this->render('blog/index.tpl');
+        $this->render('blog/dashboard.tpl');
     }
+
 }
 
 ?>
