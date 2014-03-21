@@ -5,17 +5,21 @@
 	                <input type="checkbox" class="ui-select posts input-lg" name="idpost" value="{{oPost.idpost}}" />
 	            </td>
                 <td>
-                    <h3 class="">
-                        <a href="#modal-post" class="ui-sendxhr showOnHover" data-url="/blog/post/read/" data-selector="#modal-post-content" data-entity="Post" data-view="post/read.tpl" data-toggle="modal" data-pk="{{oPost.idpost}}" title="{{tr['view']}}">
-                            {{oPost.title|safe}} <span class="targetToShow glyphicon glyphicon-zoom-in"></span>
+                    <p class="text-lg">
+                        <a href="#" class="ui-editable" data-url="/crud/update/" data-entity="Post" data-name="title" data-pk="{{oPost.idpost}}" title="{{tr['view']}}">
+                            {{oPost.title|safe}}
                         </a>
-                    </h3>
+                    </p>
                 </td>
 	            <td>
-	               <h3>{{oPost.status}}</h3>
+	               <p class="text-lg">
+                        <a href="#" class="ui-editable" data-type="select" data-source="{'unpublished': 'Non publié', 'publish': 'Publié'}" data-value="{{oPost.status}}" data-url="/crud/update/" data-entity="Post" data-name="title" data-pk="{{oPost.idpost}}" title="{{tr['view']}}">
+                            {{oPost.status}}
+                        </a>
+                    </p>
 	            </td>
 	            <td>
-	               <h3><span class="ui-timestamp" data-timestamp="{{oPost.lastupdate}}"></span></h3>
+	               <p class="text-lg"><span class="ui-timestamp" data-timestamp="{{oPost.lastupdate}}"></span></p>
 	            </td>
 	            <td class="text-center">
                 
@@ -30,7 +34,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#modal-post" class="ui-sendxhr ui-tip" data-url="blog/posts/update" data-selector="#modal-post-content" data-toggle="modal" data-idpost="{{oPost.idpost}}" title="{{tr['edit']}}">
+                            <a href="#modal-post" class="ui-sendxhr ui-tip" data-url="/blog/posts/update" data-selector="#modal-post-content" data-toggle="modal" data-idpost="{{oPost.idpost}}" title="{{tr['edit']}}">
                                 {{tr['edit']}} <span class="glyphicon glyphicon-pencil"></span>
                             </a>
                         </li>
