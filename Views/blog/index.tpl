@@ -78,40 +78,53 @@ span.reminder-txt {}
             <img src="/lib/img/apps/blog/icon.png" alt="App icon" />
         </div>
 		<div class="col-md-10 column">
-    		<h1 class="showOnHover">
-    			Blogging app <small class="targetToShow">1.0</small>
-    		</h1><br />
-            <ul class="nav nav-pills transparentBlackBg rounded">
-              <li class="active">
-                <a href="#" class="ui-sendxhr" data-url="/blog/dashboard/" data-selector="#dashboard" role="button">
-                    <span class="glyphicon glyphicon-home"></span> <strong>Dashboard</strong>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="ui-sendxhr refreshOnCallback" data-url="/blog/posts/" data-selector="#dashboard" role="button" title="Gérer les posts">
-                    <span class="glyphicon glyphicon-globe"></span> <strong>Posts</strong>
-                </a>
-              </li>
-              <li><a href="#"><span class="glyphicon glyphicon-folder-open"></span> <strong>Categories</strong></a></li>
-              <li><a href="#"><span class="glyphicon glyphicon-comment"></span> <strong>Comments</strong></a></li>
-              <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                  <span class="glyphicon glyphicon-cog"></span> <strong>Settings</strong> <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu">
-                    <li>
-                        <a href="#" type="button" class="ui-sendxhr" data-url="/blog/posts/create/" data-selector="#modal-post-content" role="button" data-toggle="modal">
-                            <span class="glyphicon glyphicon-file"></span> Bla bla
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" type="button" class="ui-sendxhr" data-url="/blog/posts/" data-selector="#dashboard" role="button">
-                            <span class="glyphicon glyphicon-file"></span> Gérer
-                        </a>
-                    </li>
-                </ul>
-              </li>              
-            </ul>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-12">
+                		<h1 class="showOnHover">
+                			Blogging app <small class="targetToShow">1.0</small>
+                		</h1>
+                    </div>
+                    <div class="col-md-12">
+                        <nav class="col-md-12 navbar navbar-inverse navbar-default" role="navigation">
+                          <div class="container-fluid">
+                                <ul class="nav navbar-nav">
+                                  <li class="active">
+                                    <a href="#" class="ui-sendxhr" data-url="/blog/dashboard/" data-selector="#dashboard" role="button">
+                                        <span class="glyphicon glyphicon-home"></span> <strong>Dashboard</strong>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#" class="ui-sendxhr refreshOnCallback" data-url="/blog/posts/" data-selector="#dashboard" role="button" title="Gérer les posts">
+                                        <span class="glyphicon glyphicon-globe"></span> <strong>Posts</strong>
+                                    </a>
+                                  </li>
+                                  <li><a href="#"><span class="glyphicon glyphicon-comment"></span> <strong>Comments</strong></a></li>
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right">
+                                  <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                      <span class="glyphicon glyphicon-cog"></span> <strong>Settings</strong> <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="#" type="button" class="ui-sendxhr" data-url="/blog/posts/create/" data-selector="#modal-post-content" role="button" data-toggle="modal">
+                                                <span class="glyphicon glyphicon-file"></span> Bla bla
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" type="button" class="ui-sendxhr" data-url="/blog/posts/" data-selector="#dashboard" role="button">
+                                                <span class="glyphicon glyphicon-file"></span> Gérer
+                                            </a>
+                                        </li>
+                                    </ul>
+                                  </li>              
+                                </ul>
+                          </div><!-- /.container-fluid -->
+                        </nav>
+                    </div>
+                </div>
+            </div>
 		</div>
 		<div id="dashboard">
         </div>
