@@ -1,13 +1,13 @@
 
   <div class="modal-header">
        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-      <h4 class="modal-title" id="myModalLabel">
+      <h4 class="modal-title">
           Nouveau Post!
       </h4>
   </div>
   
   <div id="modal-create-content" class="modal-body">
-	<form role="form" id="newPostForm" action="/backend/crud/create/" data-entity="Post" data-view="crud/create.tpl" method="post">
+	<form role="form" id="newPostForm" action="/crud/create/" data-entity="Post" data-view="crud/create.tpl" method="post">
 	    <div class="form-group">
 	        <label>Titre du post</label>
             <input type="text" name="label" class="form-control input-lg" placeholder="Entrez le titre de votre post" value="{% if title|Exists %}{{title}}{% endif %}" />
