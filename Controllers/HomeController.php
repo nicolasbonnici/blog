@@ -1,5 +1,4 @@
 <?php
-
 namespace bundles\blog\Controllers;
 
 /**
@@ -8,12 +7,14 @@ namespace bundles\blog\Controllers;
  *
  * @author Nicolas Bonnici
  */
+class HomeController extends \Library\Core\Auth
+{
 
-class HomeController extends \Library\Core\Auth {
+    public function __preDispatch()
+    {}
 
-    public function __preDispatch() {}
-
-    public function __postDispatch() {}
+    public function __postDispatch()
+    {}
 
     public function indexAction()
     {

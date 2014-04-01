@@ -1,5 +1,4 @@
 <?php
-
 namespace bundles\blog\Controllers;
 
 /**
@@ -9,12 +8,14 @@ namespace bundles\blog\Controllers;
  *
  * @author Nicolas Bonnici
  */
+class PostsController extends \Library\Core\Auth
+{
 
-class PostsController extends \Library\Core\Auth {
+    public function __preDispatch()
+    {}
 
-    public function __preDispatch() {}
-
-    public function __postDispatch() {}
+    public function __postDispatch()
+    {}
 
     public function indexAction()
     {
@@ -34,7 +35,6 @@ class PostsController extends \Library\Core\Auth {
             if (! is_null($oPost) && $oPost->isLoaded()) {
                 $this->_view['oPost'] = $oPost;
             }
-
         }
         $this->render('posts/read.tpl');
     }
@@ -47,7 +47,6 @@ class PostsController extends \Library\Core\Auth {
             if (! is_null($oPost) && $oPost->isLoaded()) {
                 $this->_view['oPost'] = $oPost;
             }
-
         }
         $this->render('posts/update.tpl');
     }

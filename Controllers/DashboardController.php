@@ -1,5 +1,4 @@
 <?php
-
 namespace bundles\blog\Controllers;
 
 /**
@@ -9,18 +8,19 @@ namespace bundles\blog\Controllers;
  *
  * @author Nicolas Bonnici
  */
+class DashboardController extends \Library\Core\Auth
+{
 
-class DashboardController extends \Library\Core\Auth {
+    public function __preDispatch()
+    {}
 
-    public function __preDispatch() {}
-
-    public function __postDispatch() {}
+    public function __postDispatch()
+    {}
 
     public function indexAction()
     {
         $this->render('blog/dashboard.tpl');
     }
-
 }
 
 ?>
