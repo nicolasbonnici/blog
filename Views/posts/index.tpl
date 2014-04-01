@@ -1,15 +1,9 @@
 
-<table
-    id="post-last-items"
-    class="table table-responsive">
+<table id="post-last-items" class="table table-responsive">
     <thead>
         <tr>
-            <th><input
-                type="checkbox"
-                class="ui-select-all ui-toggle"
-                data-toggle-selector=".ui-delete-posts"
-                data-checkbox-class="posts"
-                data-container="#post-last-items" /></th>
+            <th><input type="checkbox" class="ui-select-all ui-toggle" data-toggle-selector=".ui-delete-posts"
+                data-checkbox-class="posts" data-container="#post-last-items" /></th>
             <th>
                 <h3>Title</h3>
             </th>
@@ -24,14 +18,7 @@
             </th>
         </tr>
     </thead>
-    <tbody
-        id="postList"
-        class="ui-loadable"
-        data-entity="Post"
-        data-view="posts/list.tpl"
-        data-parameters=""
-        data-bundle="crud"
-        data-controller="list"
-        data-action="listByUser">
+    <tbody id="postList" class="ui-loadable" data-entity="Post" data-view="posts/list.tpl" data-parameters=""
+        data-bundle="crud" data-controller="list" data-action="listByUser">
     </tbody>
 </table>

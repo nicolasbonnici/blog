@@ -24,10 +24,7 @@
 </div>
 <div class="col-lg-8">
     <h1>Visites</h1>
-    <div
-        id="visitors-chart"
-        class="ui-chart"
-        class="col-md-12"></div>
+    <div id="visitors-chart" class="ui-chart" class="col-md-12"></div>
     <ul class="chartShortcuts list-unstyled col-md-12">
         <li><a href="#"> <span class="head">Total Visits</span> <span class="number">509</span>
         </a></li>
