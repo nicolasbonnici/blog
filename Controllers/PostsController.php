@@ -29,11 +29,11 @@ class PostsController extends \Library\Core\Auth
 
     public function readAction()
     {
-        if (isset($this->_params['idpost']) && intval($this->_params['idpost']) > 0) {
-            $oBlogModel = new \bundles\blog\Models\Blog(intval($this->_params['idpost']), $this->oUser);
+        if (isset($this->aParams['idpost']) && intval($this->aParams['idpost']) > 0) {
+            $oBlogModel = new \bundles\blog\Models\Blog(intval($this->aParams['idpost']), $this->oUser);
             $oPost = $oBlogModel->read();
             if (! is_null($oPost) && $oPost->isLoaded()) {
-                $this->_view['oPost'] = $oPost;
+                $this->aView['oPost'] = $oPost;
             }
         }
         $this->render('posts/read.tpl');
@@ -41,11 +41,11 @@ class PostsController extends \Library\Core\Auth
 
     public function updateAction()
     {
-        if (isset($this->_params['idpost']) && intval($this->_params['idpost']) > 0) {
-            $oBlogModel = new \bundles\blog\Models\Blog(intval($this->_params['idpost']), $this->oUser);
+        if (isset($this->aParams['idpost']) && intval($this->aParams['idpost']) > 0) {
+            $oBlogModel = new \bundles\blog\Models\Blog(intval($this->aParams['idpost']), $this->oUser);
             $oPost = $oBlogModel->read();
             if (! is_null($oPost) && $oPost->isLoaded()) {
-                $this->_view['oPost'] = $oPost;
+                $this->aView['oPost'] = $oPost;
             }
         }
         $this->render('posts/update.tpl');
@@ -53,8 +53,8 @@ class PostsController extends \Library\Core\Auth
 
     public function deleteAction()
     {
-        if (isset($this->_params['pk']) && intval($this->_params['pk']) > 0) {
-            $this->_view['pk'] = $this->_params['pk'];
+        if (isset($this->aParams['pk']) && intval($this->aParams['pk']) > 0) {
+            $this->aView['pk'] = $this->aParams['pk'];
         }
         $this->render('posts/delete.tpl');
     }

@@ -10,7 +10,7 @@ meta_description %} {% block js %}
 <script type="text/javascript" src="/lib/plugins/charts/flot/jquery.flot.pie.js"></script>
 <script type="text/javascript" src="/lib/plugins/charts/flot/jquery.flot.tooltip_0.4.4.js"></script>
 <script type="text/javascript" src="/lib/plugins/charts/flot/jquery.flot.orderBars.js"></script>
-<script type="text/javascript" src="/lib/js/core/charts.core.js"></script>
+<script type="text/javascript" src="/lib/sociableUx/js/charts.core.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
     
