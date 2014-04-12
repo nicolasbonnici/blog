@@ -19,7 +19,7 @@ class DashboardController extends \Library\Core\Auth
 
     public function indexAction()
     {
-        $this->render('blog/dashboard.tpl');
+        $this->oView->render($this->aView, 'blog/dashboard.tpl');
     }
 }
 

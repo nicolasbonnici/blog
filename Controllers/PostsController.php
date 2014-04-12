@@ -19,12 +19,12 @@ class PostsController extends \Library\Core\Auth
 
     public function indexAction()
     {
-        $this->render('posts/index.tpl');
+        $this->oView->render($this->aView, 'posts/index.tpl');
     }
 
     public function createAction()
     {
-        $this->render('posts/create.tpl');
+        $this->oView->render($this->aView, 'posts/create.tpl');
     }
 
     public function readAction()
@@ -36,7 +36,7 @@ class PostsController extends \Library\Core\Auth
                 $this->aView['oPost'] = $oPost;
             }
         }
-        $this->render('posts/read.tpl');
+        $this->oView->render($this->aView, 'posts/read.tpl');
     }
 
     public function updateAction()
@@ -48,7 +48,7 @@ class PostsController extends \Library\Core\Auth
                 $this->aView['oPost'] = $oPost;
             }
         }
-        $this->render('posts/update.tpl');
+        $this->oView->render($this->aView, 'posts/update.tpl');
     }
 
     public function deleteAction()
@@ -56,7 +56,7 @@ class PostsController extends \Library\Core\Auth
         if (isset($this->aParams['pk']) && intval($this->aParams['pk']) > 0) {
             $this->aView['pk'] = $this->aParams['pk'];
         }
-        $this->render('posts/delete.tpl');
+        $this->oView->render($this->aView, 'posts/delete.tpl');
     }
 }
 
