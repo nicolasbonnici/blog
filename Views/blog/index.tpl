@@ -66,7 +66,7 @@ span.reminder-txt {
 <div class="container">
     <div class="row clearfix transparentBlackBg rounded well ui-transition ui-shadow">
         <div class="col-md-2 column">
-            <img src="/lib/bundles/blog/img/icon.png" alt="App icon" />
+            <img src="/lib/bundles/{{sBundle}}/img/icon.png" alt="App icon" />
         </div>
         <div class="col-md-10 column">
             <div class="row">
