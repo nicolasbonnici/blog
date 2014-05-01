@@ -19,6 +19,6 @@
         </tr>
     </thead>
     <tbody id="postList" class="ui-loadable" data-entity="Post" data-view="posts/list.tpl" data-parameters=""
-        data-bundle="crud" data-controller="list" data-action="listByUser">
+        data-bundle="crud" data-controller="list" data-action="index">
     </tbody>
 </table>

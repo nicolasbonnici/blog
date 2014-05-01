@@ -1,10 +1,6 @@
 {% extends 'layout.tpl' %} {% block favicon %}/lib/img/aps/blog/icon.png{% endblock favicon %} {% block meta_title
 %}Blogging app{% endblock meta_title %} {% block meta_description %}A simple blogging application{% endblock
 meta_description %} {% block js %}
-<script type="text/javascript" src="/lib/plugins/bootstrap-editable/js/bootstrap-editable.min.js"></script>
-<script type="text/javascript" src="/lib/plugins/summernote/js/summernote.js"></script>
-<script type="text/javascript" src="/lib/plugins/moment/js/moment.min.js"></script>
-<script type="text/javascript" src="/lib/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
 <script type="text/javascript" src="/lib/plugins/charts/flot/jquery.flot.js"></script>
 <script type="text/javascript" src="/lib/plugins/charts/flot/jquery.flot.grow.js"></script>
 <script type="text/javascript" src="/lib/plugins/charts/flot/jquery.flot.pie.js"></script>
@@ -33,10 +29,7 @@ $(document).ready(function() {
 });
 </script>
 {% endblock %} {% block css %}
-<link href="/lib/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-<link href="/lib/plugins/bootstrap-editable/css/bootstrap-editable.css" rel="stylesheet">
-<link href="/lib/plugins/summernote/css/summernote.css" rel="stylesheet">
-<link href="/lib/plugins/summernote/css/summernote-bs3.css" rel="stylesheet">
+
 <style>
 #reminder div.row {
     margin: 0 0 5px 0;
