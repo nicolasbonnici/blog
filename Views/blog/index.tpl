@@ -1,35 +1,17 @@
 {% extends 'layout.tpl' %} {% block favicon %}/lib/img/aps/blog/icon.png{% endblock favicon %} {% block meta_title
 %}Blogging app{% endblock meta_title %} {% block meta_description %}A simple blogging application{% endblock
-meta_description %} {% block js %}
+meta_description %}
+{% block js %}
 <script type="text/javascript" src="/lib/plugins/charts/flot/jquery.flot.js"></script>
 <script type="text/javascript" src="/lib/plugins/charts/flot/jquery.flot.grow.js"></script>
 <script type="text/javascript" src="/lib/plugins/charts/flot/jquery.flot.pie.js"></script>
 <script type="text/javascript" src="/lib/plugins/charts/flot/jquery.flot.tooltip_0.4.4.js"></script>
 <script type="text/javascript" src="/lib/plugins/charts/flot/jquery.flot.orderBars.js"></script>
 <script type="text/javascript" src="/lib/sociableUx/js/charts.core.js"></script>
-<script type="text/javascript">
-$(document).ready(function() {
-    
-    // Init charts
-    oCharts = $.fn.Charts();
-    oCharts.initCharts();
-    $(document).ajaxStop(function() {
-        oCharts.initCharts();
-    });
-    
-    // Show the delete btn for several checked checkbox
-    $('body').on('.ui-select.posts', 'click', function() {
-       alert($('.ui-select.posts:checked').size());
-       if ($('.ui-select.posts:checked').size() > 1) {
-           $('.ui-delete-posts').removeClass('hide');
-       } else {
-           $('.ui-delete-posts').addClass('hide');
-       }
-    });
-});
-</script>
-{% endblock %} {% block css %}
+<script type="text/javascript" src="/lib/bundles/blog/js/blog.js"></script>
+{% endblock %} 
 
+{% block css %}
 <style>
 #reminder div.row {
     margin: 0 0 5px 0;
@@ -47,7 +29,10 @@ span.reminder-txt {
     height: 350px;
 }
 </style>
-{% endblock %} {% block modal %}
+
+{% endblock %} 
+
+{% block modal %}
 <div class="modal fade" id="modal-post" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content" id="modal-post-content">
@@ -55,7 +40,9 @@ span.reminder-txt {
         </div>
     </div>
 </div>
-{% endblock %} {% block main %}
+{% endblock %} 
+
+{% block main %}
 <div class="container">
     <div class="row clearfix transparentBlackBg rounded well ui-transition ui-shadow">
         <div class="col-md-2 column">
@@ -73,7 +60,7 @@ span.reminder-txt {
                         <nav class="col-md-12 navbar navbar-inverse navbar-default" role="navigation">
                             <div class="container-fluid">
                                 <ul class="nav navbar-nav">
-                                    <li class="active"><a href="#" class="ui-sendxhr" data-url="/blog/dashboard/"
+                                    <li class="active"><a href="#" class="ui-sendxhr refreshOnCallback" data-url="/blog/dashboard/"
                                         data-selector="#dashboard" role="button"> <span class="glyphicon glyphicon-home"></span>
                                             <strong>Dashboard</strong>
                                     </a></li>
