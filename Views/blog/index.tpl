@@ -1,4 +1,4 @@
-{% extends 'layout.tpl' %} {% block favicon %}/lib/img/aps/blog/icon.png{% endblock favicon %} {% block meta_title
+{% extends 'layout.tpl' %} {% block favicon %}/lib/bundles/{{sBundle}}/img/icon.png{% endblock favicon %} {% block meta_title
 %}Blogging app{% endblock meta_title %} {% block meta_description %}A simple blogging application{% endblock
 meta_description %}
 {% block js %}
