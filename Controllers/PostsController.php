@@ -1,6 +1,9 @@
 <?php
 namespace bundles\blog\Controllers;
 
+use \Library\Core\Auth as Auth;
+
+
 /**
  * Blog PostsController
  * A simple but powerfull blogging app
@@ -8,7 +11,7 @@ namespace bundles\blog\Controllers;
  *
  * @author Nicolas Bonnici
  */
-class PostsController extends \Library\Core\Auth
+class PostsController extends Auth
 {
 
     public function __preDispatch()

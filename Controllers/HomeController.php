@@ -1,13 +1,17 @@
 <?php
 namespace bundles\blog\Controllers;
 
+use \Library\Core\Controller as Controller;
+
 /**
  * Blog HomeController
  * A simple but powerfull blogging app
  *
+ * Public Home Controller to render last posts
+ *
  * @author Nicolas Bonnici
  */
-class HomeController extends \Library\Core\Auth
+class HomeController extends Controller
 {
 
     public function __preDispatch()
@@ -18,8 +22,10 @@ class HomeController extends \Library\Core\Auth
 
     public function indexAction()
     {
-        $this->oView->render($this->aView, 'blog/index.tpl');
+        $oBlogModel = new \bundles\blog\Models\Blog();
+        $oBlogModel->loadLastPosts();
+        $this->aView['oPosts'] = $oBlogModel->getEntities();
+        $this->oView->render($this->aView, 'home/index.tpl');
     }
 }
 
-?>

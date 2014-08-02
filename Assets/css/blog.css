@@ -1,0 +1,18 @@
+.blogpost {
+
+}
+
+.blogpost-title {
+    
+}
+
+.blogpost-preview {
+    min-height: 150px;
+    border: solid 5px #ddd;
+}
+
+.blogpost-intro {
+    position: absolute;
+    bottom: 0;
+    padding: 2px 5px;
+}

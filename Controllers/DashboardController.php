@@ -1,6 +1,8 @@
 <?php
 namespace bundles\blog\Controllers;
 
+use \Library\Core\Auth as Auth;
+
 /**
  * Blog DashController
  * A simple but powerfull blogging app
@@ -8,7 +10,7 @@ namespace bundles\blog\Controllers;
  *
  * @author Nicolas Bonnici
  */
-class DashboardController extends \Library\Core\Auth
+class DashboardController extends Auth
 {
 
     public function __preDispatch()
