@@ -2,7 +2,16 @@
 
 }
 
+.blogpost:hover .blogpost-preview {
+    background-position: -10px -10px;
+    min-height: 150px;
+    border: solid 5px #404040;
+}
 .blogpost-title {
+    
+}
+
+.blogpost-comment-badge {
     
 }
 
@@ -12,7 +21,6 @@
 }
 
 .blogpost-intro {
-    position: absolute;
-    bottom: 0;
+
     padding: 2px 5px;
 }
