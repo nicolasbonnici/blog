@@ -59,6 +59,10 @@ class Blog extends \Library\Core\Crud
         } catch (\Library\Core\EntitiesCollectionException $oEntitiesCollectionException) {
         	return false;
         }
+    }
+
+    public function loadLastPostFromTag()
+    {
 
     }
 }

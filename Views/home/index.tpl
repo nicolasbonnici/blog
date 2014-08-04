@@ -30,13 +30,22 @@
                 <small>Weblog autours des technologies du web</small>
                 <br />
                 <span class="label label-success">#PHP <span class="badge">99+</span></span>
-                <span class="label label-default">#Javascript</span>
-                <span class="label label-primary">#Python</span>
-                <span class="label label-success">#Security</span>
+                <span class="label label-default">#JavaScript</span>
                 <span class="label label-info">#HTML5</span>
-                <span class="label label-warning">#Android</span>
+                <span class="label label-success">#CSS3</span>
                 <span class="label label-danger">#NodeJs</span>
+                <span class="label label-danger">#WebGL</span>
+                <span class="label label-primary">#Java</span>
+                <span class="label label-primary">#Python</span>
+                <span class="label label-primary">#MySQL</span>
+                <span class="label label-primary">#NoSQL</span>
+                <span class="label label-success">#Security</span>
+                <span class="label label-success">#Design</span>
+                <span class="label label-warning">#Mobile</span>
+                <span class="label label-warning">#Android</span>
+                <span class="label label-warning">#Google</span>
                 <span class="label label-success">#Linux</span>
+                <span class="label label-success">#GNU</span>
             </h1>
         </div>
         
