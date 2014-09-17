@@ -23,7 +23,7 @@ class BlogBackend extends \Library\Core\Crud
         } elseif (! $oUser instanceof \bundles\user\Entities\User || ! $oUser->isLoaded()) {
             throw new BlogModelException('Blog need a valid user instance, no user provided.');
         } else {
-            parent::__construct('Post', $iPrimaryKey, $oUser);
+            parent::__construct('bundles\blog\Entities\Post', 'bundles\blog\Entities\Collection\PostCollection', $iPrimaryKey, $oUser);
         }
     }
 }

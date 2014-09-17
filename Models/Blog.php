@@ -26,7 +26,7 @@ class Blog extends \Library\Core\Crud
     public function __construct($iPrimaryKey = null)
     {
         assert('is_null($iPrimaryKey) || intval($iPrimaryKey) > 0');
-        parent::__construct('Post', $iPrimaryKey);
+        parent::__construct('bundles\blog\Entities\Post', 'bundles\blog\Entities\Collection\PostCollection', $iPrimaryKey);
     }
 
     /**
